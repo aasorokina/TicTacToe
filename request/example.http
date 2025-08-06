@@ -1,0 +1,26 @@
+// get list of all games
+GET http://localhost:8080/tictactoe/games
+
+// get game by id
+GET http://localhost:8080/tictactoe/games/id
+
+// save all games
+POST http://localhost:8080/tictactoe/games/save
+
+// make new game and move
+POST http://localhost:8080/tictactoe/games//move
+Content-Type: application/json
+
+{
+  "row": 1,
+  "col": 1
+}
+
+// make move in game by id
+POST http://localhost:8080/tictactoe/games/id/move
+Content-Type: application/json
+
+{ 
+  "row": 2, 
+  "col": 2 
+}
